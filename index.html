@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Phone Check-In</title>
+  <script src="app.js" defer></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+    input, button {
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 16px;
+      width: 100%;
+    }
+    label {
+      font-size: 16px;
+    }
+    #message {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>📱 Phone Check-In System</h2>
+  <input type="text" id="studentNumber" placeholder="Enter Student Number" />
+  <label>
+    <input type="checkbox" id="modeToggle" />
+    Collecting Mode
+  </label>
+  <button onclick="submitPhoneLog(
+    document.getElementById('studentNumber').value,
+    document.getElementById('modeToggle').checked
+  )">
+    Submit
+  </button>
+  <div id="message"></div>
+</body>
+</html>
