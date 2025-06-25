@@ -1,5 +1,5 @@
 
-const endpoint = "https://script.google.com/macros/s/AKfycbyvCaIA3DDQSBgZ7O9oa6KfP_eTZ6pdyUC8ekfZCiZs4URtcFndgvhB0TYOyXCDi6kq/exec";
+const endpoint = "https://script.google.com/macros/s/AKfycbyNsRmJJJzBKGSTYJjiquXuUaxIjX727UCB7lxBEyqRVXlA_0CQXTi_1WOhN430cLaT/exec";
 
 function submitPhoneLog(number, isCollecting) {
   const msg = document.getElementById("message");
